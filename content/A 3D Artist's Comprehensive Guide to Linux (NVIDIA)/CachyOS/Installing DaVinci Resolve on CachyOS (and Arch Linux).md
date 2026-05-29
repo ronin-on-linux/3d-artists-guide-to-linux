@@ -54,14 +54,11 @@ In most cases, running DaVinci will show a `GPU full error` in the edit page bec
 ### Media Imports with No Audio or Video
 > [!warning] Missing Codecs
 > **DaVinci Resolve Studio** on Linux does not support AAC audio codec. It does support H.264/H.265 and all other codecs.
-> 
 > **DaVinci Resolve (Free)** on Linux supports limited H.264  and does not support H.265 codecs or AAC audio. It’s recommended that you use DaVinci Resolve Studio on Linux. 
-> 
 > **Why?** DaVinci Resolve piggybacks off of a Windows or MacOS internal AAC license. Linux operating systems ARE compatible with AAC codec but do not license AAC at a system level, so DaVinci can't piggyback off of that. They don't fix this because the main VFX industry clients who use the Linux version for do not need AAC codecs and generally transcode their footage into editing formats anyways, so they don't bother to purchase the licensing.
 
 > [!check] Record in Universal Formats or Transcode Footage
 > Many cameras can record in H264/H265 with PCM audio, fully compatible for Studio version. If you are recording screen on OBS Studio, you will need to set the audio codec to Opus or PCM.
-> 
 > Media from stock websites or cameras with unsupported codecs can be transcoded with [ffmpeg](https://ffmpeg.org/), [Handbrake](https://handbrake.fr/) or [Shutter Encoder](https://www.shutterencoder.com/)  to AV1 or an editing format like ProRes or DNxHD on both free and studio versions (a common practice in the film industry).
 ---
 ### Davinci won’t Start or Crashes on Wayland
@@ -70,14 +67,14 @@ Davinci is looking for certain elements from X11 that need to be pointed to XWay
 Add `QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
 In many cases when using this in Wayland, you will have issues running DaVinci under sudo to activate the license because of the way Xwayland works, but I have found a janky work around.
-		1. `sudo chmod 777 /var/BlackmagicDesign`
-		2. `sudo chmod -R 777 /opt/resolve`
-		3. `QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve`
-		4. Then after you have entered the license key and its verified, you will need to reduce the folder privileges again:
-		5. `sudo chmod -R 755 /opt/resolve`
-		6. `sudo chmod -R 755 /var/BlackmagicDesign`
-		7. `sudo chown -R $USER:$USER /var/BlackmagicDesign`
-		8. It should then work fine.
+	1. `sudo chmod 777 /var/BlackmagicDesign`
+	2. `sudo chmod -R 777 /opt/resolve`
+	3. `QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve`
+	4. Then after you have entered the license key and its verified, you will need to reduce the folder privileges again:
+	5. `sudo chmod -R 755 /opt/resolve`
+	6. `sudo chmod -R 755 /var/BlackmagicDesign`
+	7. `sudo chown -R $USER:$USER /var/BlackmagicDesign`
+	8. It should then work fine.
 
 ---
 ### Importing *config.ocio* Fails (for Blender Color Space Transforms)  

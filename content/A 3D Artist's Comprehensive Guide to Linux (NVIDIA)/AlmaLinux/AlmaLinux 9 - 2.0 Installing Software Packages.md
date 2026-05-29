@@ -11,11 +11,16 @@ Linux distros include a [[Package Manager]] for installing, updating, and removi
 > [!tip] Bundle dnf Installs
 > You can install multiple packages from `dnf` by placing a space between each one: `sudo dnf install nodejs npm` To remove, swap `install` with `remove` -> `sudo dnf remove npm`
  
-  Lets say that I want to install an **office suite, chrome, obsidian notes, obs studio and a pdf viewer** all in one go.
+  Lets say that I want to install chrome.
 
-`sudo dnf install onlyoffice-bin chromium code obsidian obs-studio okular`
+`sudo dnf install chromium`
 
-Enter your password and all packages download at once. See [[Common Package List for Linux Installs]] for other software I commonly install.
+Lets say that I want to install an **office suite, obsidian notes, vscode, obs studio** all in one go using Flatpak. 
+
+`flatpak install onlyoffice obsidian vscodium com.obsproject.Studio `
+
+Hit enter and all packages will download at once. See [[Common Package List for Linux Installs]] for other software I commonly install.
+> [!info] If you don't know the address of the application either type its name as you know it and it will detect it, or use `flatpak search [guessed name]` and it will list the correlated address to type in.
 
 ---
 # Installing Creative Packages
