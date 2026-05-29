@@ -1,0 +1,40 @@
+---
+title: CachyOS - 2.0 Installing Creative Packages
+permalink: cachyos-packages
+draft: "false"
+---
+# Familiarize Yourself with Bash Installation
+Linux distros include a [[Package Manager]] for installing, updating, and removing software. CachyOS uses [pacman](https://wiki.archlinux.org/title/AUR_helpers) and [Flatpak](https://flatpak.org/). To install, use `sudo pacman -S [pkg-name]`.
+### Install Flatpak
+Flatpak sandboxes apps for easier version management and better security.
+
+`sudo pacman -S flatpak`
+
+---
+# Install Common Packages
+> [!tip] Bundle pacman Installs
+> You can install multiple packages by placing a space between each one: `sudo pacman -S nodejs npm` To remove, swap `-S` for `-R` -> `sudo pacman -R npm`
+ 
+  Lets say that I want to install an **office suite, chrome, vscode, obsidian notes, obs studio and a pdf viewer** all in one go.
+
+`sudo pacman -S onlyoffice-bin chromium code obsidian obs-studio okular`
+
+Enter your password and all packages download at once. See [[Common Package List for Linux Installs]] for other software I commonly install.
+
+---
+# Install Creative Packages
+Blender - [[Installing Blender on CachyOS (and Arch Based Distros)]]
+
+DaVinci Resolve - [[Installing DaVinci Resolve on CachyOS (and Arch Linux)]]
+
+Houdini - [[Installing Houdini on Arch and Debian Based Distros]]
+
+Natron - [[Installing Natron on Linux]]
+
+*COMING SOON* - Nuke - [[Installing Nuke on Linux]]
+
+*COMING SOON* - Unreal Engine - [[Installing Unreal Engine 5 on CachyOS]]
+
+*COMING SOON* - Substance Painter/Designer - [[Installing Substance Painter Perpetual ]]
+
+Affinity - [[Affinity on Linux]]

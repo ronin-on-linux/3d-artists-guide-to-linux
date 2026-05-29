@@ -1,0 +1,1 @@
+An [[Operating System]] made by [[Microsoft]] corporation, recently dubbed "Microslop" for their insensitive and tone-deaf [[AI]] and profit focused implementations that eroded the once good user experience they offered in the distant past.

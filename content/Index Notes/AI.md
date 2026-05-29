@@ -1,0 +1,3 @@
+AI? Artificial General Intelligence, Large Language Models, Machine Learning, Generative AI, Deep Learning Algorithms...
+
+Is anyone ever even talking about the same thing when using this now overused and blanket corporate buzzword?
