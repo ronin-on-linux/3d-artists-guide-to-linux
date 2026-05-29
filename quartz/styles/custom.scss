@@ -1,3 +1,21 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+/* Underline Heading Levels 1*/
+.HyperMD-header-1::after, h1 {
+    display: block;
+    padding-left: 10px;
+    margin-left: -15px;
+    border-left: 5px solid var(--interactive-accent);
+}
+
+.theme-dark {
+    --text-normal: #DCDCDC;
+    --h1-color: #DCDCDC;
+    --h3-color: #CCCCCC;
+    --background-primary: #121212;
+    --background-secondary: #1b1b1b;
+    --code-normal: #BBBBBB;
+    --code-background: #333;
+}
