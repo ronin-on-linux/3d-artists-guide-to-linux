@@ -64,7 +64,7 @@ See your corresponding guides for whichever one of the two distros you chose fro
 | Blender                   | DaVinci Resolve         | DaVinci Resolve Studio   |
 | Houdini                   | Adobe Substance Painter | Adobe Substance Designer |
 | Nuke & Mari               | Unreal Engine 5         | Unity                    |
-| Affinity on Linux (Wine)  | Cavalry on Linux (Wine) | Maya                     |
+| Affinity on Linux (Wine)  | Krita                   | Maya                     |
 | DJV (EXR Sequence Viewer) | VS Code & VS Codium     | 3dsMax                   |
 | OBS Studio                | Steam (Games)           | Gaffer                   |
 | Slack, Discord, Matrix    | Obsidian                | Web Browsers             |
