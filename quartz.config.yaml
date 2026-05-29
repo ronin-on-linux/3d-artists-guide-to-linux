@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: ronin-on-linux.github.io
+  baseUrl: ronin-on-linux.github.io/3d-artists-guide-to-linux/
   ignorePatterns:
     - private
     - templates
