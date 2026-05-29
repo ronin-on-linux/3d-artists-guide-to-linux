@@ -4,7 +4,7 @@ permalink: home
 draft: "false"
 ---
 # Getting Started
-> [!summary] My goal for this page is to unify all the Obsidian notes that I have cerated for [[Linux]] while setting up and troubleshooting my own creative workstation to hopefully reduce the friction it takes for 3D Artists, Video Editors and Photographers to get back into their creative flow.
+> [!summary] My goal for this page is to unify all the Obsidian notes that I have created for [[Linux]] while setting up and troubleshooting my own creative workstation to hopefully reduce the friction it takes for 3D Artists, Video Editors and Photographers to get back into their creative flow.
 
 >[!info] *Keep in mind these notes are based on my own experience, yours may vary.*
 ### Did You Know Linux is a VFX Industry Standard?
