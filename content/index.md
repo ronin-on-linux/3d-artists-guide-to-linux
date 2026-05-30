@@ -87,6 +87,7 @@ See your corresponding guides for whichever one of the two distros you chose fro
 6. [[Download ISO and Create Bootable USB]]
 ### Files and Compatibility
 1. [[HEIF Image Compatibility on Linux]]
+2. [[Convert HEIF or HEIC to PNG on Linux]]
 ### My Favorite Writing/Storytelling Resource
 1. [How Craig Mazin writes a movie | Scriptnotes Classic (Full Episode)](https://www.youtube.com/watch?v=i27IKil-LXw)
 
