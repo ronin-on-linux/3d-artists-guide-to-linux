@@ -3,7 +3,7 @@ title: AlmaLinux 9 - Guide for 3D Artists
 permalink: almalinux-3d-guide
 draft: "false"
 ---
-Based on Red Hat Enterprise [[Linux]] (REHL) and The [[Fedora]] Project, AlmaLinux innovates beyond the other enterprise distributions and methodology. Their community-led organization is considered to have more sound ethics compared to Rocky Linux.
+Based on Red Hat Enterprise [[Linux]] (REHL) and [The Fedora Project](https://fedoraproject.org/), AlmaLinux innovates beyond the other enterprise distributions and methodology. Their community-led organization is considered to have more sound ethics compared to Rocky Linux.
 
 Not to mention its faithful stability and extended support all the way until May 31st, 2032. You could install AlmaLinux 9 and not need to upgrade systems and workflows for years. (This is what makes AlmaLinux more appealing to VFX Studios over a bleeding-edge distro like CachyOS).
 

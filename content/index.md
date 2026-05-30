@@ -71,6 +71,26 @@ See your corresponding guides for whichever one of the two distros you chose fro
 ### See [[Linux Software Alternatives]] to view Alternatives if you do not see your software in the above list.
 
 ---
+# Other Useful Resources
+### [[Blender]]
+1. [[Blender File Locations on Linux]]
+2. [[Motion Blur Fix in Blender while Using Shape Keys]]
+### [[DaVinci Resolve]]
+1. [[Basic 3D Colorspace Transform Guide for DaVinci Resolve]]
+2. [[Export to External Drives in DaVinci Resolve on Linux]]
+### Linux Apps, System and Customization
+1. [[Fastfetch Customization]]
+2. [[Package Manager]]
+3. [[Common Package List for Linux Installs]]
+4. [[CachyOS - 1.2 Setting Up Wacom Tablet and Stylus on Cinnamon]] - Most Desktop Environments do this for you in the settings. Mine just broke and its always good to know the workarounds.
+5. [[LocalSend]]
+6. [[Download ISO and Create Bootable USB]]
+### Files and Compatibility
+1. [[HEIF Image Compatibility on Linux]]
+### My Favorite Writing/Storytelling Resource
+1. [How Craig Mazin writes a movie | Scriptnotes Classic (Full Episode)](https://www.youtube.com/watch?v=i27IKil-LXw)
+
+---
 > [!abstract] Be Honest with Yourself
 > Be very honest with yourself about your needs and interests. What software and workflow changes you are willing to make and what you are not willing to sacrifice to gain whatever attracts you to Linux?
 
