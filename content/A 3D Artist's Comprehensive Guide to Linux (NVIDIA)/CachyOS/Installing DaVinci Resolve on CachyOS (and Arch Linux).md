@@ -3,6 +3,8 @@ title: Installing DaVinci Resolve on CachyOS (and Arch Linux)
 permalink: cachyos-davinci
 draft: "false"
 ---
+# How to Use DaVinci Resolve
+*See [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]*
 # Install DaVinci Resolve (Free)
 CachyOS has packaged the free version on pacman. (See missing codecs in troubleshooting section)
 

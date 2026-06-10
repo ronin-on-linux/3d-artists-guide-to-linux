@@ -3,9 +3,9 @@ title: Installing DaVinci Resolve on AlmaLinux & RHEL Based Distros
 permalink: almalinux-davinci
 draft: "false"
 ---
-Alma is binary-compatible with DaVinci and only takes a few steps.
-
-# Install DaVinci Resolve (Studio or Free)
+# How to Use DaVinci Resolve
+*See [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]*
+# Install DaVinci Resolve (Studio and Free)
 1. Download the free or studio version of [[DaVinci Resolve]] from https://www.blackmagicdesign.com/products/davinciresolve.
 2. Unzip the file. *(Right click and extract).*
 3. Make sure the run file is executable. *(Right click and check executable in Permission tab).*

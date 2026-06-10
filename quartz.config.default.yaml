@@ -128,6 +128,7 @@ plugins:
     layout:
       position: left
       priority: 50
+      filterFn: "node => !node.name.includes('MediaAttachments')"
   - source: github:quartz-community/graph
     enabled: true
     layout:

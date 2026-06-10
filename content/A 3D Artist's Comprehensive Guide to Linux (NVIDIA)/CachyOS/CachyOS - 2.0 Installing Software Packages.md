@@ -15,9 +15,9 @@ Flatpak sandboxes apps for easier version management and better security.
 > [!tip] Bundle pacman Installs
 > You can install multiple packages by placing a space between each one: `sudo pacman -S nodejs npm` To remove, swap `-S` for `-R` -> `sudo pacman -R npm`
  
-  Lets say that I want to install an **office suite, chrome, vscode, obsidian notes, obs studio and a pdf viewer** all in one go.
+  Lets say that I want to install an **office suite, chrome, vscode, obsidian notes and a pdf viewer** all in one go.
 
-`sudo pacman -S onlyoffice-bin chromium code obsidian obs-studio okular`
+`sudo pacman -S onlyoffice-bin chromium code obsidian okular`
 
 Enter your password and all packages download at once. See [[Common Package List for Linux Installs]] for other software I commonly install.
 
@@ -31,10 +31,10 @@ Houdini - [[Installing Houdini on Arch and Debian Based Distros]]
 
 Natron - [[Installing Natron on Linux]]
 
+Unreal Engine - [[Installing Unreal Engine 5 on CachyOS]]
+
 *COMING SOON* - Nuke - [[Installing Nuke on Linux]]
 
-*COMING SOON* - Unreal Engine - [[Installing Unreal Engine 5 on CachyOS]]
-
-*COMING SOON* - Substance Painter/Designer - [[Installing Substance Painter Perpetual ]]
+*COMING SOON* - Substance Painter - [[Installing Substance Painter Perpetual on Linux with Steam]]
 
 Affinity - [[Affinity on Linux]]

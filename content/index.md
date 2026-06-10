@@ -75,20 +75,23 @@ See your corresponding guides for whichever one of the two distros you chose fro
 ### [[Blender]]
 1. [[Blender File Locations on Linux]]
 2. [[Motion Blur Fix in Blender while Using Shape Keys]]
+3. [[(Uncommon) Blender Denoising Glitch Fix on Linux]]
 ### [[DaVinci Resolve]]
-1. [[Basic 3D Colorspace Transform Guide for DaVinci Resolve]]
-2. [[Export to External Drives in DaVinci Resolve on Linux]]
+1. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
+2. [[Simple 3D Colorspace Transform Guide for DaVinci Resolve]]
+3. [[Export to External Drives in DaVinci Resolve on Linux]]
 ### Linux Apps, System and Customization
 1. [[Fastfetch Customization]]
 2. [[Package Manager]]
 3. [[Common Package List for Linux Installs]]
 4. [[CachyOS - 1.2 Setting Up Wacom Tablet and Stylus on Cinnamon]] - Most Desktop Environments do this for you in the settings. Mine just broke and its always good to know the workarounds.
-5. [[LocalSend]]
+5. [[LocalSend]] - Fix firewall so you can send to other devices/devices not detected.
 6. [[Download ISO and Create Bootable USB]]
 ### Files and Compatibility
 1. [[HEIF Image Compatibility on Linux]]
-2. [[Convert HEIF or HEIC to PNG on Linux]]
+2. [[Convert HEIF or HEIC to PNG on Linux]] - Because way to many of us have iPhones with the proprietary image formats.
 ### My Favorite Writing/Storytelling Resource
+*(Best 45 Minutes of Writing Advice I've Ever Heard.)*
 1. [How Craig Mazin writes a movie | Scriptnotes Classic (Full Episode)](https://www.youtube.com/watch?v=i27IKil-LXw)
 
 ---
@@ -103,7 +106,7 @@ See your corresponding guides for whichever one of the two distros you chose fro
 > [!bug] Why is there NOT instructions for AMD GPU users?
 > Because I do not own any AMD hardware, so it would be unfair for me to instruct users on how to use hardware that I haven't thoroughly tested my workflows myself - especially since AMD vs NVIDIA does change a few things on Linux/Open Source. I apologize and hope to be able to add the AMD instruction set to this documentation as soon as possible.
 
+---
 > [!info] How did I make this website?
 > Maybe you want to host your own obsidian notes on github. I found Isak's video very helpful attached below! I also used the Quartz v5 documentation. https://quartz.jzhao.xyz/
-
 <iframe width="800rem" height="485rem" src="https://www.youtube.com/embed/zGFroBGud7w" title="Turn Your Obsidian Notes Into A Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

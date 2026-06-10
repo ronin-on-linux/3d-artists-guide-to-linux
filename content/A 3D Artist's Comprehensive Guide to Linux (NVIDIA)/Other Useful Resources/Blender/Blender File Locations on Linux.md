@@ -11,6 +11,10 @@ Main repo OCIO/COlormanagement files are in `/usr/share/blender/[version]/datafi
 
 AUR Blender LTS OCIO files are in `/opt/blender-lts/4.5/datafiles/colormanagement`
 
+### Flatpak
+Addons found in `~/.var/app/org.blender.Blender/config/blender/5.1/scripts/addons/`
+
+Main File directory to find studio light hdris and color management ocio files is `/var/lib/flatpak/app/org.blender.Blender/current/active/files/blender/5.1/datafiles`
 ### AUR, Snapd, Etc
 For additional Blender LTS installations alongside normal package managers, such as AUR in CachyOS and Arch via Paru or Yay are likely in other locations.
 
