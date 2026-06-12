@@ -27,16 +27,16 @@ draft: "false"
 # Troubleshooting
 ### Houdini won't Start/Crashes after Bug Report Prompt
 1. On hybrid systems where there is an integrated graphics and a discrete graphics card you will need to force OpenGL and Vulkan to run on your discrete GPU in the terminal.
-	1. `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia houdini`
+	1. `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix houdini`
 2. If you want to use the Houdini desktop file/icon to open Houdini in this situation, you will need to add the environment variable above to your desktop file.
 	1. It will often need the env var on the `Exec=` line and include the full file path to the executable. Often you also have to remove the quotations from the path. It should look like these examples:
-	2. Houdini Launcher .desktop `Exec= env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/sidefx/launcher/bin/houdini_launcher`
-	3. Houdini .desktop `Exec= env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/sidefx/launcher/bin/houdini`
+	2. Houdini Launcher .desktop `Exec= env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix /opt/sidefx/launcher/bin/houdini_launcher`
+	3. Houdini .desktop `Exec= env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix /opt/sidefx/launcher/bin/houdini`
 3. Open and have fun in Houdini.
 ### Houdini on Wayland Crashes, UI Bugs, etc
 If you are on a Wayland based system(Gnome, KDE, MangoWM, Cosmic, Hyprland, Niri) you will need to install a version of Houdini that is qt5 and supports Wayland, which is still only version 20.6 and back. Houdini 21 won't support Wayland for a while.
 
 Once you have a Wayland compatible version installed, add `QT_QPA_PLATFORM=xcb` to its environment variables.
-1. `env QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/sidefx/launcher/bin/houdini`
+1. `env QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix /opt/sidefx/launcher/bin/houdini`
 ### Other
 https://www.sidefx.com/community/sidefx-labs-april-update/?mc_cid=b062071184
