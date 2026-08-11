@@ -12,16 +12,17 @@ draft: "false"
 - [[Affinity on Linux]]
 - RapidRAW/Darktable
 - Shutter Encoder
-- DJV (Easy via AUR)
-
-### Writing, Notes and Code Specific
+- DJV
+### Writing, Notes and Code
 - Obsidian
 - [[WriterSolo]]
 - VS Codium
-
 ### Office & Utilities 
 - LibreOffice/FreeOffice/OnlyOffice
 - Okular
 - OBS Studio
 - Gnome Disk Utility 
 - OpenRGB - Controls for RGB lights on computer (aka I use it to turn them all off.)
+### Gaming
+- Steam
+- Minecraft Launcher

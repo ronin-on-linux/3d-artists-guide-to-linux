@@ -10,6 +10,7 @@ configuration:
   baseUrl: ronin-on-linux.github.io/3d-artists-guide-to-linux/
   ignorePatterns:
     - private
+    - MediaAttachments
     - templates
     - .obsidian
   theme:

@@ -26,7 +26,7 @@ draft: "false"
 	- `sudo setsebool -P nis_enabled 1`
 # Troubleshooting
 ### Houdini won't Start/Crashes after Bug Report Prompt
-1. On hybrid systems where there is an integrated graphics and a discrete graphics card you will need to force OpenGL and Vulkan to run on your discrete GPU in the terminal.
+1. On many systems where there is an integrated graphics and a discrete graphics card you will need to force OpenGL and Vulkan to run on your discrete GPU in the terminal.
 	1. `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix houdini`
 2. If you want to use the Houdini desktop file/icon to open Houdini in this situation, you will need to add the environment variable above to your desktop file.
 	1. It will often need the env var on the `Exec=` line and include the full file path to the executable. Often you also have to remove the quotations from the path. It should look like these examples:

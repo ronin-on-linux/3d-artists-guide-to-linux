@@ -19,4 +19,4 @@ I have tried Alma, Rocky, Red Hat and AlmaLinux was the smoothest experience of 
 
 > [!note] The way I set up Alma will not be the way a real VFX studio would set up a workstation.
 
-AlmaLinux appears to be replacing current industry standards like CentOS 7 after it lost support and even Rocky Linux in some cases. See [VFX Studio Workstation Linux Report (2024)](https://drive.google.com/file/d/1QWJS1PTvDGr6AliP4ejMzFTZ2WVEl0e-/view)
+AlmaLinux and Rocky Linux appear to be replacing current industry standards like CentOS 7 after it lost support. See [VFX Studio Workstation Linux Report (2024)](https://drive.google.com/file/d/1QWJS1PTvDGr6AliP4ejMzFTZ2WVEl0e-/view)

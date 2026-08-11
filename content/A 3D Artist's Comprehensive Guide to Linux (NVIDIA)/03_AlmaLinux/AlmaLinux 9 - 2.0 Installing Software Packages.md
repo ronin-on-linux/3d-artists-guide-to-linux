@@ -28,9 +28,9 @@ Once your AlmaLinux installation is prepped, Start installing the software you n
 
 Blender - [[Installing Blender on AlmaLinux & RHEL Based Distros]]
 
-[[DaVinci Resolve]] - [[Installing DaVinci Resolve on RHEL Based Distros]]
+[[DaVinci Resolve]] - [[Installing DaVinci Resolve on RHEL Binary Distros]]
 
-Houdini - [[Installing Houdini on AlmaLinux & RHEL Based Distros]]
+Houdini - [[Installing Houdini on Fedora & RHEL Binary Distros]]
 
 Natron - [[Installing Natron on Linux]]
 
