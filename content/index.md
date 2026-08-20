@@ -6,10 +6,10 @@ draft: "false"
 > [!summary] This website is compiled from notes taken configuring my own [[Linux]] workstations to hopefully reduce the friction it takes for 3D Artists, Video Editors and Photographers to get back into their creative flow. *Keep in mind these notes are based on my own experience, yours may vary.*
 # How to Install Linux?
 See corresponding guides for whichever one of the distros you choose.
-- ### ![[cachyos-linux.svg|30]] *[[CachyOS - Guide for 3D Artists]] (Recommended) - Great for creators, gamers and users who also like to customize & tailor their experience.*
+- ### *[[CachyOS - Guide for 3D Artists]] (Recommended) - Great for creators, gamers and users who also like to customize & tailor their experience.*
 ![[Screenshot from 2026-08-11 11-08-56 1.png]]
-- ![[fedora.svg|22]] [[Fedora Cinnnamon - Guide for 3D Artists]] - Popular RHEL upstream project that is fully open source and perfect for creative individuals seeking a clean experience in a modern linux distro.
-- ![[almalinux.svg|23]] **[[AlmaLinux 9 - Guide for 3D Artists]]** - RHEL binary distro. Likely better for individuals who are dedicated VFX artists used to studio environments, takes more work to set up.
+- [[Fedora Cinnnamon - Guide for 3D Artists]] - Popular RHEL upstream project that is fully open source and perfect for creative individuals seeking a clean experience in a modern linux distro.
+- **[[AlmaLinux 9 - Guide for 3D Artists]]** - RHEL binary distro. Likely better for individuals who are dedicated VFX artists used to studio environments, takes more work to set up.
 ---
 # [[Picking a Distro - Understanding the building blocks of Linux and how they influence 3D Artists]]
 ![[linux-bitmap.png]]
