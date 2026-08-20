@@ -4,9 +4,6 @@ permalink: linux-affinity-wine
 draft: "false"
 ---
 Most easily enabled by [Ryzendew on Github](https://github.com/ryzendew/Linux-Affinity-Installer) as an [Appimage download](https://github.com/ryzendew/Linux-Affinity-Installer/releases/tag/3.0.2) or a Py installer that included the option to install the individual deprecated versions as well as the unified version.
-# Install Affinity Appimage via AUR
-
-`paru -S affinity-appimage-bin`
 # Install Affinity via Python Installer
 The Python installer requires Qt6 prior to running the script, but willl give you the latest affinity version.
 1. Pacman - `sudo pacman -S python-pyqt6`
@@ -19,3 +16,7 @@ The Python installer requires Qt6 prior to running the script, but willl give yo
 Then run `curl -sSL https://raw.githubusercontent.com/ryzendew/AffinityOnLinux/refs/heads/main/AffinityScripts/AffinityLinuxInstaller.py | python3` in the terminal.
 
 Select `one click install`.
+
+# Install Affinity Appimage via AUR
+
+`paru -S affinity-appimage-bin`

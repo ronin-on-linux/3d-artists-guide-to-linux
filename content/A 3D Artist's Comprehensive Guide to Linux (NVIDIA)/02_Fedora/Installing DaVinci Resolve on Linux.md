@@ -1,6 +1,6 @@
 ---
 title: Installing DaVinci Resolve on Fedora
-permalink: fedora-resolve
+permalink: resolve-linux
 draft: "false"
 ---
 # How I Use DaVinci Resolve
@@ -9,25 +9,16 @@ draft: "false"
 1. Download the free or studio version of [[DaVinci Resolve]] from https://www.blackmagicdesign.com/products/davinciresolve.
 2. Unzip the file into downloads folder. *(Right click and extract).* Bring the `.run` into the downloads folder
 3. Make sure the run file is executable. *(Right click and check executable in Permission tab).*
-4. Install Fuse2 if you didn't during your Fedora setup `sudo dnf install fuse-libs`
+4. Install Fuse2 if you didn't during your initial setup `sudo pacman -S fuse-libs` or `sudo dnf install fuse-libs`
 5. Run installer. It will prompt any missing packages you will need to install prior to running the installer.
-	1. The most common packages it asks for are `sudo dnf install apr apr-util mesa-libGLU`
+	1. The most common packages it asks for on Fedora are `sudo dnf install apr apr-util mesa-libGLU`
 6. `sudo dnf install libxcrypt-compat` to fix the missing `libcrypt.so.1` error.
 7. Double click the `.run` file and install DaVinci.
-8. You will need to move/rename a series of outdated glib files DaVinci is made for RHEL binary distros still on version 8-9 which rely on older glibs.
-	1. libglib-2.0.so
-	2. libglib-2.0.so.0
-	3. libglib-2.0.so.0.6800.4
-	4. libgobject-2.0.so
-	5. libgobject-2.0.so.0
-	6. libgobject-2.0.so.0.6800.4
-	7. libgio-2.0.so
-	8. libgio-2.0.so.0
-	9. libgio-2.0.so.0.6800.4
-	10. libgmodule-2.0.so
-	11. libgmodule-2.0.so.0
-	12. libgmodule-2.0.so.0.6800.4
 # Troubleshooting
+### Non-RHEL Binary Distros - Fixing DaVinci Libraries
+You will need to move/rename a series of outdated glib files since DaVinci is made for RHEL binary distros still on version 8-9 which rely on older glibs. I've written a script to archive them. [[Resolve Glib Fix]].
+
+---
 ### GPU Full Error (Recommended Fix)
 In most cases, running DaVinci will show a `GPU full error` in the edit page because it’s attempting to load on the *motherboard Integrated graphics (iGPU)* instead of your *Discrete GPU (dGPU)*. Take note it is also best to run on an *x11* system instead of Wayland for best performance.
 1. Right Click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder.
@@ -67,4 +58,4 @@ If a config.ocio fails to import, you can also check its file health in the term
 
 ---
 > [!info] AlmaLinux Versions
-> AlmaLinux, Rocky and Red Hat 10 come with newer zlib libraries meaning you will experience the same installation issues as Fedora and other modern Linux distros. Prefer AlmaLinux 9.
+> AlmaLinux, Rocky and Red Hat 10 come with newer zlib libraries meaning you will experience the same installation issues as Fedora and other modern Linux distros. Prefer AlmaLinux 9. To use on AlmaLinux 10 use the [[Resolve Glib Fix]] script to archive the older libraries.

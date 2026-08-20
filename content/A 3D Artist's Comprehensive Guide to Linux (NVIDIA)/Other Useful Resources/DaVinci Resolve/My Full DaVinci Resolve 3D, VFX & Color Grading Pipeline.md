@@ -298,6 +298,7 @@ The three most common formats I export most commonly are:
 | ProRes 4444 | Rec.709 Linear or Color/Gamma of source footage (sLog 3, Red Log3, BRaw, etc). | Footage, Compositing and VFX baked into an editing format for easier transfer to client-side editors and colorists who will do the color grading and editing.                                       |
 | EXR         | Rec.709 Linear or ACEScg                                                       | Compositing and VFX baked into an EXR image sequence for other client-side artists or team members to work with further. **(MultiLayer EXR Exports must be done via Saver Node in the Fusion tab)** |
 | H.264/H.265 | Rec.709 Gamma 2.4                                                              | Final Deliverable for user playback on most monitors.                                                                                                                                               |
+
 **Color Space is set at the project level, but to be safe for final deliverables set it on export under Advanced Settings.**
 1. Render Settings -> Advanced Settings -> Color Space Tag -> **Rec.709**
 2. Render Settings -> Advanced Settings -> Color Space Tag -> **Gamma 2.4** or any specific gamma of target viewing monitor.

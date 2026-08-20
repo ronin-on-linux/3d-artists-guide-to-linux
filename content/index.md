@@ -6,11 +6,13 @@ draft: "false"
 > [!summary] This website is compiled from notes taken configuring my own [[Linux]] workstations to hopefully reduce the friction it takes for 3D Artists, Video Editors and Photographers to get back into their creative flow. *Keep in mind these notes are based on my own experience, yours may vary.*
 # How to Install Linux?
 See corresponding guides for whichever one of the distros you choose.
-- ### ![[cachyos-linux.svg|30]] *[[CachyOS - Guide for 3D Artists]] - Great for all around creators, gamers and users who like to customize and tailor their experience and want access to things like the AUR.*
+- ### ![[cachyos-linux.svg|30]] *[[CachyOS - Guide for 3D Artists]] (Recommended) - Great for creators, gamers and users who also like to customize & tailor their experience.*
+![[Screenshot from 2026-08-11 11-08-56 1.png]]
 - ![[fedora.svg|22]] [[Fedora Cinnnamon - Guide for 3D Artists]] - Popular RHEL upstream project that is fully open source and perfect for creative individuals seeking a clean experience in a modern linux distro.
 - ![[almalinux.svg|23]] **[[AlmaLinux 9 - Guide for 3D Artists]]** - RHEL binary distro. Likely better for individuals who are dedicated VFX artists used to studio environments, takes more work to set up.
 ---
 # [[Picking a Distro - Understanding the building blocks of Linux and how they influence 3D Artists]]
+![[linux-bitmap.png]]
 
 ---
 # What Software Works on Linux? Alternatives?
@@ -24,10 +26,11 @@ See corresponding guides for whichever one of the distros you choose.
 3. [[Motion Blur Fix in Blender while Using Shape Keys]]
 4. [[(Uncommon) Blender Denoising Glitch Fix on Linux]]
 ### [[DaVinci Resolve]]
-1. [[Installing DaVinci Resolve on Fedora]]
-2. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
-3. [[Simple 3D Colorspace Transform Guide for DaVinci Resolve]]
-4. [[Export to External Drives in DaVinci Resolve on Linux]]
+1. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
+2. [[Installing DaVinci Resolve on CachyOS and Studio with the AUR]]
+3. [[Installing DaVinci Resolve on Linux]]
+4. [[Simple 3D Colorspace Transform Guide for DaVinci Resolve]]
+5. [[Export to External Drives in DaVinci Resolve on Linux]]
 ### Linux Apps, System and Customization
 1. [[Fastfetch Customization]]
 2. [[Package Manager]]
@@ -55,8 +58,9 @@ See the [VFX Reference Platform](https://vfxplatform.com/linux/) Surveys from [2
 > Two reasons:
 > 1. Because I do not own any AMD hardware.
 > 2. VFX software developers generally target NVIDIA hardware, so you will have a better experience using NVIDIA hardware in the industry.
-
+<iframe width="800" height="485" src="https://www.youtube.com/embed/videoseries?si=QsXIt0vo8LenfqUi&amp;list=PLepNQXstEc98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
+
 > [!info] How did I make this website?
 > Maybe you want to host your own obsidian notes on github. I found Isak's video very helpful attached below! I also used the Quartz v5 documentation. https://quartz.jzhao.xyz/
 <iframe width="800rem" height="485rem" src="https://www.youtube.com/embed/zGFroBGud7w" title="Turn Your Obsidian Notes Into A Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

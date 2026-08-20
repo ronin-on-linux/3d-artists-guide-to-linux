@@ -51,6 +51,8 @@ See https://wiki.almalinux.org/documentation/nvidia.html for more details.
 3. `sudo dnf install nvidia-driver-cuda`
 4. `reboot`
 5. Check if it was successful with `nvidia-smi`
+
+![[Screenshot from 2026-08-11 10-52-47.png]]
 > [!info] Failure to install NVIDIA drivers or Buggy Drivers
 > Occasionally, this method can fail around the time of AlmaLinux updates (e.g. v9.7 -> v9.8). In this case, you might have better luck installing the RPM NVIDIA packages until it is patched by AlmaLinux. (I frequently use the RPM Fusion NVIDIA drivers instead if I encounter any issues with the AlmaLinux NVIDIA version).
 >  1. `sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda`

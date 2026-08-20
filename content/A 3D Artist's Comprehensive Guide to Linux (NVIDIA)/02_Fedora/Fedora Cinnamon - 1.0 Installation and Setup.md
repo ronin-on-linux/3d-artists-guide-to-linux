@@ -3,6 +3,7 @@ title: Fedora Cinnamon Spin - 1.0 Installation and Setup
 permalink: fedora-install
 draft: "false"
 ---
+![[Screenshot from 2026-08-05 16-48-55.png]]
 # Install Fedora
 ### Install Fedora
 1. Select Language, Keyboard & Time.
@@ -29,6 +30,8 @@ https://rpmfusion.org/Howto/NVIDIA
 3. `sudo dnf install xorg-x11-drv-nvidia-cuda`
 4. `reboot`
 5. `nvidia-smi` to verify installation worked and check driver/cuda version.
+
+![[Screenshot from 2026-08-11 10-52-47.png]]
 # Software-Specific Requirements (Recommended anyways)
 ### Install Fuse 2
 This step is necessary if you want to use DaVinci Resolve Studio on Linux.
@@ -40,4 +43,5 @@ This step is necessary if you want to use Houdini and some server licensing on F
 3. Ctrl + S, Ctrl + X
 4. `reboot`
 
+![[Screenshot from 2026-08-13 13-24-56.png]]
 ### Proceed to [[Fedora Cinnamon - 2.0 Install Software Packages]]

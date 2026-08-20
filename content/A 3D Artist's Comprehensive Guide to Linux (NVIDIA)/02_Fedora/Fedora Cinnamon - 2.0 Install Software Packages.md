@@ -30,9 +30,9 @@ Once your Fedora installation is up, start installing the software you need for 
 
 Blender - [[Installing Blender on Linux]]
 
-[[DaVinci Resolve]] - [[Installing DaVinci Resolve on Fedora]]
+[[DaVinci Resolve]] - [[Installing DaVinci Resolve on Linux]]
 
-Houdini - [[Installing Houdini on Fedora & RHEL Binary Distros]]
+Houdini - [[Installing Houdini on Linux]]
 
 Natron - [[Installing Natron on Linux]]
 

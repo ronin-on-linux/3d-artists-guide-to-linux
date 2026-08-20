@@ -30,7 +30,7 @@ Blender - [[Installing Blender on AlmaLinux & RHEL Based Distros]]
 
 [[DaVinci Resolve]] - [[Installing DaVinci Resolve on RHEL Binary Distros]]
 
-Houdini - [[Installing Houdini on Fedora & RHEL Binary Distros]]
+Houdini - [[Installing Houdini on Linux]]
 
 Natron - [[Installing Natron on Linux]]
 

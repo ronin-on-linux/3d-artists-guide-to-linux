@@ -4,18 +4,16 @@ permalink: cachyos-packages
 draft: "false"
 ---
 # Familiarize Yourself with Bash Installation
-Linux distros include a [[Package Manager]] for installing, updating, and removing software. CachyOS uses [pacman](https://wiki.archlinux.org/title/AUR_helpers) and [Flatpak](https://flatpak.org/). To install, use `sudo pacman -S [pkg-name]`.
-### Install Flatpak
-Flatpak sandboxes apps for easier version management and better security.
+Linux distros include a [[Package Manager]] for installing, updating, and removing software. CachyOS uses [pacman](https://wiki.archlinux.org/title/AUR_helpers) and [Flatpak](https://flatpak.org/). To install, use `sudo pacman -S [pkg-name]` and `flatpak install [pkg.Name.name]`.
 
-`sudo pacman -S flatpak`
+> [!tip] Beginner Tip - Bundle Installs
+> You can install multiple packages by placing a space between each one: `sudo pacman -S nodejs npm` 
+
+To remove, swap `-S` for `-R` -> `sudo pacman -R npm`
 
 ---
 # Install Common Packages
-> [!tip] Bundle pacman Installs
-> You can install multiple packages by placing a space between each one: `sudo pacman -S nodejs npm` To remove, swap `-S` for `-R` -> `sudo pacman -R npm`
- 
-  Lets say that I want to install an **office suite, chrome, vscode, obsidian notes and a pdf viewer** all in one go.
+Lets say that I want to install an **office suite, chrome, vscode, obsidian notes and a pdf viewer** all in one go.
 
 `sudo pacman -S onlyoffice-bin chromium code obsidian okular`
 
@@ -25,9 +23,9 @@ Enter your password and all packages download at once. See [[Common Package List
 # Install Creative Packages
 Blender - [[Installing Blender on Linux]], [[Installing Blender on Arch Based Distros]]
 
-DaVinci Resolve - [[Installing DaVinci Resolve on CachyOS (and Arch Linux)]]
+DaVinci Resolve - [[Installing DaVinci Resolve on Linux]], [[Installing DaVinci Resolve on CachyOS and Studio with the AUR]]
 
-Houdini - [[Installing Houdini on Arch and Debian Based Distros]]
+Houdini - [[Installing Houdini on Linux]]
 
 Natron - [[Installing Natron on Linux]]
 
