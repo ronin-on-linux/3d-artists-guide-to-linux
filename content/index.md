@@ -58,9 +58,19 @@ See the [VFX Reference Platform](https://vfxplatform.com/linux/) Surveys from [2
 > Two reasons:
 > 1. Because I do not own any AMD hardware.
 > 2. VFX software developers generally target NVIDIA hardware, so you will have a better experience using NVIDIA hardware in the industry.
-<iframe width="800" height="485" src="https://www.youtube.com/embed/videoseries?si=QsXIt0vo8LenfqUi&amp;list=PLepNQXstEc98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 > [!info] How did I make this website?
 > Maybe you want to host your own obsidian notes on github. I found Isak's video very helpful attached below! I also used the Quartz v5 documentation. https://quartz.jzhao.xyz/
-<iframe width="800rem" height="485rem" src="https://www.youtube.com/embed/zGFroBGud7w" title="Turn Your Obsidian Notes Into A Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/zGFroBGud7w" 
+    title="Turn Your Obsidian Notes Into A Website"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
