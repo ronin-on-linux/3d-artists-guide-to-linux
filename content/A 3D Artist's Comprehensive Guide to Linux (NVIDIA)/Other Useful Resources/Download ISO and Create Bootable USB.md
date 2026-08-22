@@ -3,6 +3,7 @@ title: Download ISO and Create Bootable USB
 permalink: bootable-usb
 draft: "false"
 ---
+<iframe width="800" height="485" src="https://www.youtube.com/embed/MmNJJDlH82Y?si=6v-aWWtVVJaltjyL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # Set Up Bootable USB
 
 ### Create Bootable Media
