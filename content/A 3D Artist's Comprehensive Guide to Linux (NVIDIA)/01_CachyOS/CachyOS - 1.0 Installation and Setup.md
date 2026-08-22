@@ -3,7 +3,7 @@ title: CachyOS - 1.0 Installation and Setup
 permalink: cachyos-install
 draft: "false"
 ---
-<iframe width="800" height="485" src="https://www.youtube.com/embed/xjWmOM-ymqM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="485" src="https://www.youtube.com/embed/s_cm_c8BxrM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Install CachyOS
 1. Select Language, Timezone and Keyboard Layout.
