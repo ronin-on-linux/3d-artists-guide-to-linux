@@ -1,6 +1,17 @@
 There are 3 primary ways to install Blender on Linux. Download from www.blender.org, install via your native package manager(which has its own caveats), or via flatpak in a sandboxed environment.
 
-![[Screenshot from 2026-08-12 10-00-56.png]]
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/luESgIQipnU" 
+    title="3 Ways to Install Blender on Linux"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
 # Flatpak Install (Recommended - Most universal option with auto-updates.)
 
 1. Make sure flatpak is installed.

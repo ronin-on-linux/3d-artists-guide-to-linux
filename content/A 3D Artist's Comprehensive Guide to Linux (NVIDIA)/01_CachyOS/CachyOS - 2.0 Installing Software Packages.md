@@ -21,7 +21,7 @@ Enter your password and all packages download at once. See [[Common Package List
 
 ---
 # Install Creative Packages
-Blender - [[Installing Blender on Linux]], [[Installing Blender on Arch Based Distros]]
+Blender - [[Installing Blender on Linux]]
 
 DaVinci Resolve - [[Installing DaVinci Resolve on Linux]], [[Installing DaVinci Resolve on CachyOS and Studio with the AUR]]
 
