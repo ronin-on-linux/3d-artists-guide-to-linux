@@ -30,13 +30,13 @@ Once your Fedora installation is up, start installing the software you need for 
 
 Blender - [[Installing Blender on Linux]]
 
-[[DaVinci Resolve]] - [[Installing DaVinci Resolve on Linux]]
+[[DaVinci Resolve]] - [[../Other Useful Resources/DaVinci Resolve/Installing DaVinci Resolve on Linux]]
 
 Houdini - [[Installing Houdini on Linux]]
 
 Natron - [[Installing Natron on Linux]]
 
-*COMING SOON* - Nuke - [[Installing Nuke on Linux]]
+*COMING SOON* - Nuke - [[../Other Useful Resources/Installing Nuke on Linux]]
 
 *COMING SOON* - Unreal Engine - [[Installing Unreal Engine 5 on RHEL Linux]]
 

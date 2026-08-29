@@ -11,17 +11,19 @@ draft: "false"
 3. Make sure the run file is executable. *(Right click and check executable in Permission tab).*
 4. Install Fuse2 if you didn't during your initial setup `sudo pacman -S fuse-libs` or `sudo dnf install fuse-libs`
 5. Run installer. It will prompt any missing packages you will need to install prior to running the installer.
-	1. The most common packages it asks for on Fedora are `sudo dnf install apr apr-util mesa-libGLU`
-6. `sudo dnf install libxcrypt-compat` to fix the missing `libcrypt.so.1` error.
+	1. The most common packages it asks for on Fedora are `sudo dnf install apr apr-util mesa-libGLU` 
+6. `sudo pacman -S libxcrypt-compat` or `sudo dnf install libxcrypt-compat` to fix the missing `libcrypt.so.1` error.
 7. Double click the `.run` file and install DaVinci.
 # Troubleshooting
-### Non-RHEL Binary Distros - Fixing DaVinci Libraries
-You will need to move/rename a series of outdated glib files since DaVinci is made for RHEL binary distros still on version 8-9 which rely on older glibs. I've written a script to archive them. [[Resolve Glib Fix]].
+### Non-RHEL Binary Distros - Fixing DaVinci Libraries (Necessary Fix)
+You will need to move/rename a series of outdated glib files since DaVinci is made for RHEL binary distros like Rocky and AlmaLinux still on version 8-9 which rely on older glibs.
+
+`cd /opt/resolve/libs && sudo mkdir archived-libs && sudo mv libglib* libgio* libmodule* libgobject* archived-libs`
 
 ---
 ### GPU Full Error (Recommended Fix)
 In most cases, running DaVinci will show a `GPU full error` in the edit page because it’s attempting to load on the *motherboard Integrated graphics (iGPU)* instead of your *Discrete GPU (dGPU)*. Take note it is also best to run on an *x11* system instead of Wayland for best performance.
-1. Right Click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder.
+1. Right Click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder in Cinnamon.
 2. Then open the DaVinci Resolve desktop file in `~/.local/share/applications/davinci.desktop` There should be a line to insert environment variables.
 	1. Replace the `Exec=` line with `Exec=env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u`
 ---
@@ -47,7 +49,7 @@ Add `QT_QPA_PLATFORM=xcb` at the beginning of your `Exec=env QT_QPA_PLATFORM=xcb
 ### Importing *config.ocio* Fails (for Blender Color Space Transforms)  
 If you attempt to import a blender `config.ocio` file in the Fusion or Color Page, it will appear empty.
 
-DaVinci Resolve on Linux currently uses `/opt/resolve/libs/libOpenColorIO.so.2.4` meaning that it only supports importing OCIO files that are v2.4 and lower. For example, the current Blender config.ocio is ocio_profile_version: 2.5.1 so that can be an issue.
+Resolve on Linux currently uses `/opt/resolve/libs/libOpenColorIO.so.2.4` meaning that it only supports importing OCIO files that are v2.4 and lower. For example, the current Blender config.ocio is ocio_profile_version: 2.5.1 so that can be an issue.
 
 > [!success] Use Compatible OCIO Version 
 > Easy solution is to just find an earlier version of your file. In my case for Blender, I use the blender 5.0 color management folder and config.ocio since It is only version 2.4 https://github.com/blender/blender/blob/blender-v5.0-release/release/datafiles/colormanagement/config.ocio
@@ -58,4 +60,11 @@ If a config.ocio fails to import, you can also check its file health in the term
 
 ---
 > [!info] AlmaLinux Versions
-> AlmaLinux, Rocky and Red Hat 10 come with newer zlib libraries meaning you will experience the same installation issues as Fedora and other modern Linux distros. Prefer AlmaLinux 9. To use on AlmaLinux 10 use the [[Resolve Glib Fix]] script to archive the older libraries.
+> AlmaLinux, Rocky and Red Hat 10 come with newer zlib libraries meaning you will experience the same installation issues as Fedora and other modern Linux distros. Prefer AlmaLinux 9 or 8 if you want a clean install experience.
+
+---
+# Other Videos for AMD Users and Free Version
+1. DaVinci on Fedora AMD https://www.youtube.com/watch?v=jLq7D1rxQeM&t=11s
+2. DaVinci Free AMD on CachyOS https://www.youtube.com/watch?v=u_b9PSNlkPA&t=101s
+3. DaVinci on Bazzite https://www.youtube.com/watch?v=iQtX6YfkiOU&t=723s
+4. DaVinci Troubleshooting on Linux https://www.youtube.com/watch?v=oHsboGBxUuc

@@ -23,7 +23,7 @@ Enter your password and all packages download at once. See [[Common Package List
 # Install Creative Packages
 Blender - [[Installing Blender on Linux]]
 
-DaVinci Resolve - [[Installing DaVinci Resolve on Linux]], [[Installing DaVinci Resolve on CachyOS and Studio with the AUR]]
+DaVinci Resolve - [[Installing DaVinci Resolve on Linux]]
 
 Houdini - [[Installing Houdini on Linux]]
 
@@ -31,7 +31,7 @@ Natron - [[Installing Natron on Linux]]
 
 Unreal Engine - [[Installing Unreal Engine 5 on CachyOS]]
 
-*COMING SOON* - Nuke - [[Installing Nuke on Linux]]
+*COMING SOON* - Nuke - [[../Other Useful Resources/Installing Nuke on Linux]]
 
 *COMING SOON* - Substance Painter - [[Installing Substance Painter Perpetual on Linux with Steam]]
 

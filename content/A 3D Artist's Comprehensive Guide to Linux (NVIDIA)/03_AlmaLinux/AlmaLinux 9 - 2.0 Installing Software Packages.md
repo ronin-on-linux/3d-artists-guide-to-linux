@@ -34,7 +34,7 @@ Houdini - [[Installing Houdini on Linux]]
 
 Natron - [[Installing Natron on Linux]]
 
-*COMING SOON* - Nuke - [[Installing Nuke on Linux]]
+*COMING SOON* - Nuke - [[../Other Useful Resources/Installing Nuke on Linux]]
 
 *COMING SOON* - Unreal Engine - [[Installing Unreal Engine 5 on RHEL Linux]]
 

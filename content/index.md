@@ -20,17 +20,16 @@ See corresponding guides for whichever one of the distros you choose.
 
 ---
 # Other Useful Resources
-### [[Blender]]
+### Blender
 1. [[Installing Blender on Linux]]
 2. [[Blender File Locations on Linux]]
-3. [[Motion Blur Fix in Blender while Using Shape Keys]]
-4. [[(Uncommon) Blender Denoising Glitch Fix on Linux]]
-### [[DaVinci Resolve]]
+3. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/Blender/Blender Startup Configuration|Blender Startup Configuration]]
+4. [[Motion Blur Fix in Blender while Using Shape Keys]]
+5. [[(Uncommon) Blender Denoising Glitch Fix on Linux]]
+### DaVinci Resolve
 1. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
-2. [[Installing DaVinci Resolve on CachyOS and Studio with the AUR]]
-3. [[Installing DaVinci Resolve on Linux]]
-4. [[Simple 3D Colorspace Transform Guide for DaVinci Resolve]]
-5. [[Export to External Drives in DaVinci Resolve on Linux]]
+2. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/DaVinci Resolve/Installing DaVinci Resolve on Linux|Installing DaVinci Resolve on Linux]]
+3. [[Export to External Drives in DaVinci Resolve on Linux]]
 ### Linux Apps, System and Customization
 1. [[Fastfetch Customization]]
 2. [[Package Manager]]
