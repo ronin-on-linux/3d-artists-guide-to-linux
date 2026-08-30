@@ -1,5 +1,5 @@
 ---
-title: Installing DaVinci Resolve on Fedora
+title: Installing DaVinci Resolve on Linux
 permalink: resolve-linux
 draft: "false"
 ---
