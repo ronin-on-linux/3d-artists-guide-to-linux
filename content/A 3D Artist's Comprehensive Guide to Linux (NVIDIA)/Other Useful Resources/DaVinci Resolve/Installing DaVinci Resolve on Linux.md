@@ -1,5 +1,5 @@
 ---
-title: Installing DaVinci Resolve on Fedora
+title: Installing DaVinci Resolve on Linux
 permalink: resolve-linux
 draft: "false"
 ---
@@ -24,9 +24,45 @@ You will need to move/rename a series of outdated glib files since DaVinci is ma
 ### GPU Full Error (Recommended Fix)
 In most cases, running DaVinci will show a `GPU full error` in the edit page because it’s attempting to load on the *motherboard Integrated graphics (iGPU)* instead of your *Discrete GPU (dGPU)*. Take note it is also best to run on an *x11* system instead of Wayland for best performance.
 1. Right Click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder in Cinnamon.
-2. Then open the DaVinci Resolve desktop file in `~/.local/share/applications/davinci.desktop` There should be a line to insert environment variables.
+2. Then open the DaVinci Resolve desktop file with your text editor of choice in `~/.local/share/applications/davinci.desktop` There should be a line to insert environment variables.
 	1. Replace the `Exec=` line with `Exec=env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u`
+
 ---
+### Davinci won’t Start or Crashes on Wayland
+Davinci is looking for certain elements from X11 that need to be pointed to XWayland in the Environment Variables.
+
+Add `QT_QPA_PLATFORM=xcb` at the beginning of your `Exec=env QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u` in the desktop launcher file.
+
+---
+### Installing on "Vanilla" Arch and Arch-based distros like Omarchy
+If you are installing on Vanilla Arch, at least 5 dependencies are old enough they are no longer included in the actively maintained `pacman` repos. `gtk2`, `libpng12`, `qt5-webchannel`, `qt5-location`, `qt5-webengine`. *Once they are installed you can follow the instructions at the top of the page like usual.*
+##### Install Missing Packages from Pacman Archive
+Missing packages can also be installed from the arch linux archive which is faster than the AUR compiling method. *Installing from the AUR is an option, BUT it will take forever because they need to be compiled one by one. (When I have done it, it took hours.)*
+```bash
+sudo pacman -U https://archive.archlinux.org/packages/g/gtk2/gtk2-2.24.33-5-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/l/libpng12/libpng12-1.2.59-2-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/q/qt5-webchannel/qt5-webchannel-5.15.9+kde+r3-1-x86_64.pkg.tar.zst https://arch
+ive.archlinux.org/packages/q/qt5-location/qt5-location-5.15.9%2Bkde%2Br4-1-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/q/qt5-webengine/qt5-webengine-5.15.9-3-x86_64.pkg.tar.zst
+```
+##### **Add Archive Pacages to Pacman Ignore List**
+If you don't add these 5 items to the pacman ignore list, then when you try to do a system update, your AUR helper will automatically detect the packages and try to compile them from the AUR.
+
+Using your editor of choice, add the excerpt below to the `[options]` section of `/etc/pacman.conf`
+
+`sudo nano /etc/pacman.conf`
+
+```bash
+# Ignore DaVinci Resolve Pacman -U Archives
+IgnorePkg = gtk2 qt5-webchannel qt5-location qt5-webengine libpng12
+```
+
+---
+# Other Videos for AMD Users and Free Version
+1. DaVinci on Fedora AMD https://www.youtube.com/watch?v=jLq7D1rxQeM&t=11s
+2. DaVinci Free AMD on CachyOS https://www.youtube.com/watch?v=u_b9PSNlkPA&t=101s
+3. DaVinci on Bazzite https://www.youtube.com/watch?v=iQtX6YfkiOU&t=723s
+4. DaVinci Troubleshooting on Linux https://www.youtube.com/watch?v=oHsboGBxUuc
+
+---
+# Other Important Information
 ### Media Imports with No Audio or Video
 > [!warning] Missing Codecs
 > **DaVinci Resolve Studio** on Linux does not support AAC audio codec. It does support H.264/H.265 and all other codecs.
@@ -38,13 +74,7 @@ In most cases, running DaVinci will show a `GPU full error` in the edit page bec
 > [!check] Record in Universal Formats or Transcode Footage
 > Many cameras can record in H264/H265 with PCM audio, fully compatible for Studio version. If you are recording screen on OBS Studio, you will need to set the audio codec to Opus or PCM.
 > 
-> Media from stock websites or cameras with unsupported codecs can be transcoded with [ffmpeg](https://ffmpeg.org/), [Handbrake](https://handbrake.fr/) or [Shutter Encoder](https://www.shutterencoder.com/)  to AV1 or an editing format like ProRes or DNxHD on both free and studio versions (a common practice in the film industry).
----
-### Davinci won’t Start or Crashes on Wayland
-Davinci is looking for certain elements from X11 that need to be pointed to XWayland in the Environment Variables.
-
-Add `QT_QPA_PLATFORM=xcb` at the beginning of your `Exec=env QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u` in the desktop launcher file.
-
+> Media from stock websites or cameras with unsupported codecs can be transcoded with [ffmpeg](https://ffmpeg.org/), [Handbrake](https://handbrake.fr/) or [Shutter Encoder](https://www.shutterencoder.com/)  to H264/PCM, AV1 or an editing format like ProRes or DNxHD on both free and studio versions (a common practice in the film industry).
 ---
 ### Importing *config.ocio* Fails (for Blender Color Space Transforms)  
 If you attempt to import a blender `config.ocio` file in the Fusion or Color Page, it will appear empty.
@@ -59,12 +89,6 @@ If a config.ocio fails to import, you can also check its file health in the term
 2. If you need blenders current ocio, make a copy of its color management folder to your home folder `~/colormanagement/` and edit the config.ocio file and just change the version number to 2.4. (ANything that uses code from 2.5+ will break, but the ACES, Kronos and AgX color spaces still work.)
 
 ---
-> [!info] AlmaLinux Versions
-> AlmaLinux, Rocky and Red Hat 10 come with newer zlib libraries meaning you will experience the same installation issues as Fedora and other modern Linux distros. Prefer AlmaLinux 9 or 8 if you want a clean install experience.
-
----
-# Other Videos for AMD Users and Free Version
-1. DaVinci on Fedora AMD https://www.youtube.com/watch?v=jLq7D1rxQeM&t=11s
-2. DaVinci Free AMD on CachyOS https://www.youtube.com/watch?v=u_b9PSNlkPA&t=101s
-3. DaVinci on Bazzite https://www.youtube.com/watch?v=iQtX6YfkiOU&t=723s
-4. DaVinci Troubleshooting on Linux https://www.youtube.com/watch?v=oHsboGBxUuc
+### AlmaLinux Versions
+> [!warning]
+> AlmaLinux, Rocky and Red Hat all have active support for versions 8, 9 & 10. RHEL binary distros in version 8 & 9 should work with the davinci installer without many issues, but version 10 comes with newer zlib libraries meaning you will need to use the recommended and necessary fixes from the troubleshooting section!
