@@ -1,5 +1,5 @@
 # Headline
-I recommend 3D Artists try ***Fedora Cinnamon*** because the industry uses the RHEL binary distros (AlmaLinux and Rocky Linux) that are downstream enterprise versions of Fedora.
+I recommend 3D Artists try ***CachyOS with Cinnamon Desktop*** because its surprisingly stable for being Arch-based, its installer introduces you to the most important parts of Linux, lets you choose and customize what you need, and has multiple quality of life improvements and helpers that make it great to run software like Blender, DaVinci Resolve Studio and Affinity.
 
 Cinnamon is a traditional, hassle free x11-based desktop environment that reduces the chances of software compatability issues.
 
