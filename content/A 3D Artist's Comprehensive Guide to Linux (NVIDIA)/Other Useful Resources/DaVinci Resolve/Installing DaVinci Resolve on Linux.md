@@ -3,17 +3,23 @@ title: Installing DaVinci Resolve on Linux
 permalink: resolve-linux
 draft: "false"
 ---
+Installing DaVinci Resolve on Linux is not complex, but may take a few additional steps if you aren't using RHEL binary distros, which you probably aren't.
+
+![[Screenshot from 2026-09-01 16-29-26.png]]
 # How I Use DaVinci Resolve
 *See [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]*
 # Install DaVinci Resolve (Studio and Free)
-1. Download the free or studio version of [[DaVinci Resolve]] from https://www.blackmagicdesign.com/products/davinciresolve.
-2. Unzip the file into downloads folder. *(Right click and extract).* Bring the `.run` into the downloads folder
+1. Download the free or studio version of DaVinci Resolve from https://www.blackmagicdesign.com/products/davinciresolve.
+2. Unzip the file into downloads folder. *(Right click and extract).*
+![[Screenshot from 2026-09-01 15-55-49.png]]
 3. Make sure the run file is executable. *(Right click and check executable in Permission tab).*
-4. Install Fuse2 if you didn't during your initial setup `sudo pacman -S fuse-libs` or `sudo dnf install fuse-libs`
-5. Run installer. It will prompt any missing packages you will need to install prior to running the installer.
+![[Screenshot from 2026-09-01 16-05-35.png]]
+4. Install Fuse2 if you didn't during your initial setup `sudo pacman -S fuse2` or `sudo dnf install fuse-libs`
+5. `sudo pacman -S libxcrypt-compat` or `sudo dnf install libxcrypt-compat` to prevent a missing `libcrypt.so.1` error.
+6. When you try to run installer, it will prompt any missing packages you will need to install prior to running the installer.
 	1. The most common packages it asks for on Fedora are `sudo dnf install apr apr-util mesa-libGLU` 
-6. `sudo pacman -S libxcrypt-compat` or `sudo dnf install libxcrypt-compat` to fix the missing `libcrypt.so.1` error.
 7. Double click the `.run` file and install DaVinci.
+![[../../../MediaAttachments/Screenshot from 2026-09-01 16-11-36.png]]
 # Troubleshooting
 ### Non-RHEL Binary Distros - Fixing DaVinci Libraries (Necessary Fix)
 You will need to move/rename a series of outdated glib files since DaVinci is made for RHEL binary distros like Rocky and AlmaLinux still on version 8-9 which rely on older glibs.
@@ -23,9 +29,13 @@ You will need to move/rename a series of outdated glib files since DaVinci is ma
 ---
 ### GPU Full Error (Recommended Fix)
 In most cases, running DaVinci will show a `GPU full error` in the edit page because it’s attempting to load on the *motherboard Integrated graphics (iGPU)* instead of your *Discrete GPU (dGPU)*. Take note it is also best to run on an *x11* system instead of Wayland for best performance.
-1. Right Click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder in Cinnamon.
+1. In the Cinnamon menu, right click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder in Cinnamon.
+![[cinnamon-properties.png]]
 2. Then open the DaVinci Resolve desktop file with your text editor of choice in `~/.local/share/applications/davinci.desktop` There should be a line to insert environment variables.
 	1. Replace the `Exec=` line with `Exec=env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u`
+
+![[resolve-desktop-env-vars.png]]
+> [!info] If there is an `Exec[en_US]=` line make sure to paste the environment variable there as well!
 
 ---
 ### Davinci won’t Start or Crashes on Wayland
