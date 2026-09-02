@@ -32,7 +32,7 @@ In most cases, running DaVinci will show a `GPU full error` in the edit page bec
 1. Then open the DaVinci Resolve desktop file with your text editor of choice (I use VSCodium) in `/usr/share/applications/DaVinciResolve.desktop` There should be a line to insert environment variables. You will need sudo privileges.
 	1. Replace the `Exec=` line with `Exec=env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u`
 
-![[resolve-desktop-env-vars.png]]
+![[resolve-desktop-env-vars-1.png]]
 > [!info] If there is an `Exec[en_US]=` line make sure to paste the environment variable there as well!
 
 ---
