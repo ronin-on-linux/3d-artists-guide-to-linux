@@ -29,9 +29,7 @@ You will need to move/rename a series of outdated glib files since DaVinci is ma
 ---
 ### GPU Full Error (Recommended Fix)
 In most cases, running DaVinci will show a `GPU full error` in the edit page because it’s attempting to load on the *motherboard Integrated graphics (iGPU)* instead of your *Discrete GPU (dGPU)*. Take note it is also best to run on an *x11* system instead of Wayland for best performance.
-1. In the Cinnamon menu, right click on the DaVinci `App Launcher` and select `Properties`. Check `use dedicated GPU if available`. This will generate a new desktop file in the home folder in Cinnamon.
-![[cinnamon-properties.png]]
-2. Then open the DaVinci Resolve desktop file with your text editor of choice in `~/.local/share/applications/davinci.desktop` There should be a line to insert environment variables.
+1. Then open the DaVinci Resolve desktop file with your text editor of choice (I use VSCodium) in `/usr/share/applications/DaVinciResolve.desktop` There should be a line to insert environment variables. You will need sudo privileges.
 	1. Replace the `Exec=` line with `Exec=env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve %u`
 
 ![[resolve-desktop-env-vars.png]]
