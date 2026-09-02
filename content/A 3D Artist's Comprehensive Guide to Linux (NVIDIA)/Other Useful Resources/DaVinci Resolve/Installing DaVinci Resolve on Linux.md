@@ -24,7 +24,7 @@ Installing DaVinci Resolve on Linux is not complex, but may take a few additiona
 ### Non-RHEL Binary Distros - Fixing DaVinci Libraries (Necessary Fix)
 You will need to move/rename a series of outdated glib files since DaVinci is made for RHEL binary distros like Rocky and AlmaLinux still on version 8-9 which rely on older glibs.
 
-`cd /opt/resolve/libs && sudo mkdir archived-libs && sudo mv libglib* libgio* libmodule* libgobject* archived-libs`
+`cd /opt/resolve/libs && sudo mkdir archived-libs && sudo mv libglib* libmodule* libgobject* archived-libs`
 
 ---
 ### GPU Full Error (Recommended Fix)
