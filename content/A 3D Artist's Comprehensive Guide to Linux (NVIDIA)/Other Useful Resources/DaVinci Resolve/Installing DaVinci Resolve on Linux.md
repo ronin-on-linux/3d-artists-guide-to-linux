@@ -5,7 +5,17 @@ draft: "false"
 ---
 Installing DaVinci Resolve on Linux is not complex, but may take a few additional steps if you aren't using RHEL binary distros, which you probably aren't.
 
-![[Screenshot from 2026-09-01 16-29-26.png]]
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/U9CZfKfKm34" 
+    title="Install DaVinci Resolve on Linux"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 # How I Use DaVinci Resolve
 *See [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]*
 # Install DaVinci Resolve (Studio and Free)
