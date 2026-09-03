@@ -31,12 +31,13 @@ See corresponding guides for whichever one of the distros you choose.
 2. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/DaVinci Resolve/Installing DaVinci Resolve on Linux|Installing DaVinci Resolve on Linux]]
 3. [[Export to External Drives in DaVinci Resolve on Linux]]
 ### Linux Apps, System and Customization
-1. [[Fastfetch Customization]]
-2. [[Package Manager]]
-3. [[Common Package List for Linux Installs]]
-4. [[CachyOS - 1.2 Setting Up Wacom Tablet and Stylus on Cinnamon]] - Most Desktop Environments do this for you in the settings. Mine just broke and its always good to know the workarounds.
-5. [[LocalSend]] - Fix firewall so you can send to other devices/devices not detected.
-6. [[Download ISO and Create Bootable USB]]
+1. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/Affinity on Linux|Affinity on Linux]]
+2. [[Fastfetch Customization]]
+3. [[Package Manager]]
+4. [[Common Package List for Linux Installs]]
+5. [[CachyOS - 1.2 Setting Up Wacom Tablet and Stylus on Cinnamon]] - Most Desktop Environments do this for you in the settings. Mine just broke and its always good to know the workarounds.
+6. [[LocalSend]] - Fix firewall so you can send to other devices/devices not detected.
+7. [[Download ISO and Create Bootable USB]]
 ### Files and Compatibility
 1. [[HEIF Image Compatibility on Linux]]
 2. [[Convert HEIF or HEIC to PNG on Linux]] - Because way to many of us have iPhones with the proprietary image formats.
