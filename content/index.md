@@ -27,9 +27,11 @@ See corresponding guides for whichever one of the distros you choose.
 4. [[Motion Blur Fix in Blender while Using Shape Keys]]
 5. [[(Uncommon) Blender Denoising Glitch Fix on Linux]]
 ### DaVinci Resolve
-1. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
-2. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/DaVinci Resolve/Installing DaVinci Resolve on Linux|Installing DaVinci Resolve on Linux]]
+1. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/DaVinci Resolve/Installing DaVinci Resolve on Linux|Installing DaVinci Resolve on Linux]]
+2. [[My Full DaVinci Resolve 3D, VFX & Color Grading Pipeline]]
 3. [[Export to External Drives in DaVinci Resolve on Linux]]
+### Houdini
+1. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/Houdini/Installing Houdini on Linux|Installing Houdini on Linux]]
 ### Linux Apps, System and Customization
 1. [[A 3D Artist's Comprehensive Guide to Linux (NVIDIA)/Other Useful Resources/Affinity on Linux|Affinity on Linux]]
 2. [[Fastfetch Customization]]

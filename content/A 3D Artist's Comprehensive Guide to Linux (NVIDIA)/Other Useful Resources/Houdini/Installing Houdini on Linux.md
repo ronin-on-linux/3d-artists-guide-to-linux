@@ -1,9 +1,19 @@
 ---
-title: Installing Houdini on Arch and Debian Based Distros
-permalink: cachyos-houdini
+title: Installing Houdini on Linux
+permalink: linux-houdini
 draft: "false"
 ---
-![[Screenshot from 2026-08-13 10-58-36.png]]
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/mDrXpFE5a2A" 
+    title="Install Houdini on Linux"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 # Install Houdini Launcher
 1. Download Houdini launcher from www.sidefx.com/download
 2. See initial instructions on [www.sidefx.com/docs/houdini/licensing/install_launcher.html](https://www.sidefx.com/docs/houdini/licensing/setup_installer.html)
@@ -39,11 +49,13 @@ draft: "false"
 `sudo setsebool -P nis_enabled 1`
 
 See [[Fedora Cinnamon - 1.0 Installation and Setup]] to set SELinux to permissive.
-### Houdini on Wayland Crashes, UI Bugs, etc
-If you are on a Wayland based system(Gnome, KDE, MangoWM, Cosmic, Hyprland, Niri) you will need to install a version of Houdini that is qt5 and supports Wayland, which is still only version 20.6 and back. Houdini 21 won't support Wayland for a while.
+### Houdini on Wayland - Reducing Crashes, UI Bugs, etc
+If you are on a Wayland based system (Gnome, KDE, MangoWM, Cosmic, Hyprland, Niri) ***you will need to install a version of Houdini that is `qt5` and better supports Wayland***, which is still only version 21 and back. Houdini 22 won't support Wayland for a while.
+
+![[Screenshot from 2026-09-04 09-52-15.png]]
 
 Once you have a Wayland compatible version installed, add `QT_QPA_PLATFORM=xcb` to its environment variables.
 
 `Exec=env QT_QPA_PLATFORM=xcb __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia KARMA_XPU_DEVICES=optix /opt/sidefx/launcher/bin/houdini`
-### Other
+### SideFX Labs Info
 https://www.sidefx.com/community/sidefx-labs-april-update/?mc_cid=b062071184
